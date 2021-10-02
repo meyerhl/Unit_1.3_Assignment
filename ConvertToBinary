@@ -19,3 +19,4 @@ public class ConvertToBinary {
         System.out.println("The final binary conversion is: " + myResult);
     }
 }
+// EDITed this line
