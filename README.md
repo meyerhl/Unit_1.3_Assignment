@@ -1,5 +1,7 @@
 # Unit_1.3_Assignment
 
+Please open the ConvertToBinary file to see the programming code.
+
 The purpose of this assignment is to write a Java program that prompts
 the user for a decimal number and then displays to the screen the binary
 equivalent as a string. This must use division, modulo and concatenation.
