@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ConvertToBinary {
+    public static void main (String[] args) {
+        Scanner myObj = new Scanner(System.in); //creates an object
+        System.out.println("Enter the decimal number you wish to convert to binary: ");
+        int userNumber = myObj.nextInt(); //stores the user input value to be used as integer
+        int binary[] = new int[256]; //stores an array of up to 256 integers
+        String myResult = "";
+        int index = 0;
+        System.out.println("The decimal number you entered was: " + userNumber);
+            while (userNumber > 0) {
+                int remainder = userNumber % 2; //gets the remainder which is the binary
+                binary[index++] = remainder; // index to be incremented and stored in binary list
+                userNumber = userNumber /2;
+            }
+            for (int i = index -1; i>=0; i--) { //loops over the list backwards
+                myResult = myResult + binary[i];
+    }
+        System.out.println("The final binary conversion is: " + myResult);
+    }
+}
